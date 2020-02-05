@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Italiana', serif;
+}
+#content-page{
+    background-image: url("../imgs/bckgrd.jpg");
+    width: 100%;
+    height: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#header-title-menu{
+    width:100%;
+    background-color: black;
+    color:white;
+}
+.title{
+    width:34%;
+    display: inline-block;
+}
+.menu-box{
+    width:64%;
+    display: inline-block;
+}
+.menu-option{
+    width:30%;
+    display: inline-block;
+    text-align: center;
+}
+.title-text{
+    margin:3% 15%;
+}
+.making-pizza-box{
+    width: 85%;
+    text-align: center;
+    margin:5%;
+    border-radius: 25px;
+    border:1px solid red;
+    padding:1%;
+    display: none;
+}
+.making-pizza-box.visible{
+    
+    display: block;
+}
+.pizza-name-input{
+    border:none;
+    border-bottom:3px solid black;
+}
+.pizza-name-label{
+    font-size: 150%;
+}
+.pizza-name-input{
+    font-size: 150%;
+    width:20%;
+    margin:0.5%;
+}
+.ingedients-type{
+    margin:1%;
+    padding:5%;
+}
+.ingredients-box{
+    width:60%;
+    border:1px solid green;
+    margin:1% auto;
+}
+.ingredients-select{
+    padding:1%;
+}
+.ingr-box-select{
+   font-size: 150%;
+   display:inline-block;
+   border:1px solid black;
+   width:25%;
+   height:10%;
+   margin:1.5%;
+}
