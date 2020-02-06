@@ -208,3 +208,20 @@ td{
     color:white;
     font-size: 120%;
 }
+.arrow-up{
+    position: fixed;
+    right:0;
+    bottom:0;
+    margin:2%;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    border:1px solid black;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+.arrow{
+    text-align: center;
+    line-height: 45px;
+}
