@@ -7,15 +7,17 @@
     <script src = "assets/scripts/script.js" defer></script>
 </head>
 <body>
+
   <div class = "darken-mode" id = "add-dark-mode">
     <div id = "header-title-menu">
         <div class = "title">
             <a href = "index.html"><h2 class = "title-text">Pizzerino By Luasino</h2></a>
         </div>
         <div class = "menu-box">
-            <a><h3 class = "menu-option">Menu</h3></a>
+            <a href = "#pizzas-menu"><h3 class = "menu-option">Menu</h3></a>
             <a><h3 id = "create-pizza" class = "menu-option">Make your own pizza</h3></a>
-            <a><h3 class = "menu-option">Contact</h3></a>
+            <a><h3 class = "menu-option">Order a pizza</h3></a>
+            <a href = "#footer-links"><h3 class = "menu-option">Contact</h3></a>
             <!-- <button id = "create-pizza" class = "menu-option">Make your own pizza</button>
             <h3 class = "menu-option">Contact</h3> -->
         </div>
@@ -50,6 +52,13 @@
                 <input class = "ingr-box-select" type = "button" value = "ham">
             </div>
         </div>
+
+        <div id = "making-order-pizza" class = "pizza-order">
+            
+
+
+        </div>
+
 
         <h3 class = "text-on-page-content"  id = "hide-welcome-text">Welcome on our <br>Italiano Politano Pizzeria</h3>       
         
@@ -110,6 +119,16 @@
 
 
     <div id = "footer">
+        <div id = "footer-links">
+            <h3 class = "footer-header">Send your opinion :)</h3>
+            <div class = "left-side-form">
+                <input class = "form-inputs" type = "text" placeholder = "Your name"><br>
+                <input class = "form-inputs" type = "text" placeholder = "Your email">
+            </div>
+            <div class = "right-side-form">
+                <textarea class = "form-input-textarea" type = "text" placeholder = "Your message"></textarea>
+            </div> 
+        </div>
         <h3 class = "copyright-text">@2019-2020 All rights reserved by Lukasz Wolsza</h3>
     </div>
 </body>
