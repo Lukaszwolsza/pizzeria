@@ -83,8 +83,14 @@ body{
     border:1px solid green;
     margin:1% auto;
 }
+.ingredients-box-select{
+    width:60%;
+    border:1px solid green;
+    margin:1% auto;
+}
 .ingredients-select{
     padding:1%;
+    display:inline-block;
 }
 .ingr-box-select{
    font-size: 150%;
@@ -104,7 +110,6 @@ body{
 .text-on-page-content.invisible{
    display: none;
 }
-
 a{
     text-decoration: none;
     color:white;
@@ -115,9 +120,14 @@ a{
         rgba(0, 0, 0, 0.9)
       ),url("../imgs/bckgrd.jpg");
 }
-#pizzas-menu{
+.pizzas-menu{
     width:60%;
     margin:2% auto;
+}
+.pizzas-menu.visible{
+    width:60%;
+    margin:2% auto;
+    display:none;
 }
 .pizza-table{
     width:100%;
@@ -224,4 +234,75 @@ td{
 .arrow{
     text-align: center;
     line-height: 45px;
+}
+#inputedSize{
+    width:20%;
+    border:none;
+    border-bottom:2px solid black;
+    text-align: center;
+    font-size: 130%;
+    margin:1%;
+}
+#inputedIngredients{
+    width:20%;
+    border:none;
+    border-bottom:2px solid black;
+    text-align: center;
+    font-size: 130%;
+    display: block;
+    margin:2% auto;
+}
+#inputedIngredientsFirst{
+    width:20%;
+    border:none;
+    border-bottom:2px solid black;
+    text-align: center;
+    font-size: 130%;
+    display: block;
+    margin:2% auto;
+}
+.add-new-ingredient{
+    display:inline-block;
+    border:1px solid black;
+    background-color: black;
+    color:white;
+    height:20px;
+    width:20%;
+    margin:1% 5%;
+}
+.add-new-ingredient:hover{
+    display:inline-block;
+    border:1px solid black;
+    background-color: black;
+    color:white;
+    height:20px;
+    width:20%;
+    margin:1% 5%;
+    cursor: pointer;
+}
+.remove-new-ingredient{
+    display: inline-block;
+    width:20%;
+    margin:1% 5%;
+    border:2px solid black;
+}
+.remove-new-ingredient:hover{
+    display: inline-block;
+    width:20%;
+    margin:1% 5%;
+    border:2px solid black;
+    cursor: pointer;
+}
+.address-info{
+    width:60%;
+    border:1px solid green;
+    margin:1% auto;
+}
+.address-inputs{
+    width:25%;
+    margin:0.5% auto;
+}
+.address-lables{
+    width:20%;
+    padding-left:3%;
 }

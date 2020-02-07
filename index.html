@@ -14,10 +14,10 @@
             <a href = "index.html"><h2 class = "title-text">Pizzerino By Luasino</h2></a>
         </div>
         <div class = "menu-box">
-            <a href = "#pizzas-menu"><h3 class = "menu-option">Menu</h3></a>
-            <a><h3 id = "create-pizza" class = "menu-option">Make your own pizza</h3></a>
-            <a><h3 class = "menu-option">Order a pizza</h3></a>
-            <a href = "#footer-links"><h3 class = "menu-option">Contact</h3></a>
+            <a href = "#pizzasMenu"><h3 class = "menu-option">Menu</h3></a>
+            <a><h3 class = "menu-option">Make your own pizza</h3></a>
+            <a><h3 id = "create-pizza" class = "menu-option">Order a pizza</h3></a>
+            <a href = "#footer-links"><h3 id = "contactBox" class = "menu-option">Contact</h3></a>
             <!-- <button id = "create-pizza" class = "menu-option">Make your own pizza</button>
             <h3 class = "menu-option">Contact</h3> -->
         </div>
@@ -27,30 +27,37 @@
 
         <div class = "making-pizza-box" id = "add-modal">
             <label class = "pizza-name-label">Pizza's name</label><br>
-            <input class = "pizza-name-input" type = "text"><br>
+            <input class = "pizza-name-input" type = "text" id = "pizzaName"><br>
     
-            <div class = "ingredients-box">
+            <div class = "ingredients-box-select">
                 <h3 class = "ingredients-select">Choose size of pizza</h3>
-                <input class = "ingr-box-select" type = "button" value = "30cm">
-                <input class = "ingr-box-select" type = "button" value = "40cm">
-                <input class = "ingr-box-select" type = "button" value = "50cm">
+                <input type = "text" id = "inputedSize" placeholder = "30/40/50">cm
             </div>
     
             <div class = "ingredients-box">
-                <h3 class = "ingredients-select">Choose your ingredients</h3>
-                <input class = "ingr-box-select" type = "button" value = "mushrooms">
-                <input class = "ingr-box-select" type = "button" value = "onion">
-                <input class = "ingr-box-select" type = "button" value = "pepper"><br>
-                <input class = "ingr-box-select" type = "button" value = "cheese">
-                <input class = "ingr-box-select" type = "button" value = "cucamber">
-                <input class = "ingr-box-select" type = "button" value = "olives"><br>
-                <input class = "ingr-box-select" type = "button" value = "tomatoe">
-                <input class = "ingr-box-select" type = "button" value = "sweetcorn">
-                <input class = "ingr-box-select" type = "button" value = "pineapple"><br>
-                <input class = "ingr-box-select" type = "button" value = "pepperoni">
-                <input class = "ingr-box-select" type = "button" value = "beckon">
-                <input class = "ingr-box-select" type = "button" value = "ham">
+                <h3 class = "ingredients-select">Choose your ingredients</h3><br>
+                <button class = "add-new-ingredient" id = "newIngredient">Add another one +</button> 
+                <button class = "remove-new-ingredient" id = "removeIngredient">Remove one -</button><br>
+
+                <div class = "inputed-dynamic-ingredients">
+                    <input type = "text" id = "inputedIngredients" placeholder = "mushrooms">
+                </div>
             </div>
+
+            <div class = "address-info">
+                <h3 class = "ingredients-select">Your address</h3><br>
+                <label class = "address-lables">Street</label>
+                <input class = "address-inputs" type = "text"><br>
+                <label class = "address-lables">Number</label>
+                <input class = "address-inputs" type = "text"><br>
+                <label class = "address-lables">Post Code</label>
+                <input class = "address-inputs" type = "text"><br>
+                <label class = "address-lables">City</label>
+                <input class = "address-inputs" type = "text"><br>
+            </div>
+
+
+            <input type = "button" id = "btnToAddPizza" value = "Add new pizza">
         </div>
 
         <div id = "making-order-pizza" class = "pizza-order">
@@ -70,7 +77,7 @@
 
     
 </div>
-    <div id = "pizzas-menu">
+    <div id = "pizzasMenu" class = "pizzas-menu">
         <table class = "pizza-table">
             <tr>
                 <td class = "pizza-name">Pizza name</td>
@@ -123,7 +130,7 @@
 
 
     <div id = "footer">
-        <div id = "footer-links">
+        <!-- <div id = "footer-links">
             <h3 class = "footer-header">Send your opinion :)</h3>
             <div class = "left-side-form">
                 <input class = "form-inputs" type = "text" placeholder = "Your name"><br>
@@ -132,7 +139,7 @@
             <div class = "right-side-form">
                 <textarea class = "form-input-textarea" type = "text" placeholder = "Your message"></textarea>
             </div> 
-        </div>
+        </div> -->
         <h3 class = "copyright-text">@2019-2020 All rights reserved by Lukasz Wolsza</h3>
     </div>
 </body>
