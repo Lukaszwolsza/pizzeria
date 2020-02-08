@@ -9,6 +9,8 @@ const inputedIngredientsDynamic = document.querySelector('.inputed-dynamic-ingre
 const pizzaMenu = document.getElementById('pizzasMenu');
 const orderInfoBox = document.getElementById('orderStatus');
 
+
+
 //Buttons
 const btnToContact = document.getElementById('contactBox');
 const btnAddNewPizza = document.getElementById('btnToAddPizza');
@@ -38,7 +40,6 @@ const showPizza = () => {
     darkModeActive.classList.toggle('visible');
     hiddingWelcomeText.classList.toggle('invisible');
     pizzaMenu.classList.toggle('visible');
-    
 };
 
 const addNewPizza = () => {
@@ -65,18 +66,13 @@ const rmvNewIngr = () => {
     }
 };
 
-function checkPizzaSize(){
-    if(pizzaSize === 30 || pizzaSize === 40 || pizzaSize === 50){
-        pizzaSizeResult.textContent = pizzaSize;
-    } else {
-        alert('You inputed incorrect pizza size');
-    }
-}
+let arrayWithIngredients = [];
 
 const showFinalInfoAboutOrder = () => {
     orderInfoBox.classList.toggle('visible');
     creatingPizzaDiv.classList.toggle('visible');
 
+    const allIngredients = document.querySelectorAll('.inputedIngr');
     const streetAddress = document.getElementById('streetInfo').value;
     const numberAddress = document.getElementById('flatNumberInfo').value;
     const postCode = document.getElementById('postCodeInfo').value;
@@ -84,13 +80,24 @@ const showFinalInfoAboutOrder = () => {
     const pizzaSize = document.getElementById('inputedSize').value;
     const pizzaName = document.getElementById('pizzaName').value;
 
+    
+   
+    for(let i = 0; i < allIngredients.length; i++){
+        console.log(allIngredients.value)
+    
+    }
     pizzaNameResult.textContent = pizzaName;
-    checkPizzaSize();
+    // if(pizzaSize === 30 || pizzaSize === 40 || pizzaSize === 50){
+    //     pizzaSizeResult.textContent = pizzaSize;
+    // } else {
+    //     alert('You inputed incorrect pizza size');
+
+    // }
     streetResult.textContent = streetAddress;
     flatResult.textContent = numberAddress;
     postcodeResult.textContent = postCode;
     cityResult.textContent = cityAddress;
-    
+
 };
 
 btnToCreatePizza.addEventListener('click', showPizza);
