@@ -47,24 +47,34 @@
             <div class = "address-info">
                 <h3 class = "ingredients-select">Your address</h3><br>
                 <label class = "address-lables">Street</label>
-                <input class = "address-inputs" type = "text"><br>
+                <input class = "address-inputs" id = "streetInfo" type = "text" ><br>
                 <label class = "address-lables">Number</label>
-                <input class = "address-inputs" type = "text"><br>
+                <input class = "address-inputs" id = "flatNumberInfo" type = "text" ><br>
                 <label class = "address-lables">Post Code</label>
-                <input class = "address-inputs" type = "text"><br>
+                <input class = "address-inputs" id = "postCodeInfo" type = "text" ><br>
                 <label class = "address-lables">City</label>
-                <input class = "address-inputs" type = "text"><br>
+                <input class = "address-inputs" id = "cityInfo" type = "text"><br>
             </div>
 
 
             <input type = "button" id = "btnToAddPizza" value = "Add new pizza">
         </div>
 
-        <div id = "making-order-pizza" class = "pizza-order">
-            
+        
+        <div id = "orderStatus" class = "order-info-box">
+            <h3 class = "final-info-order">Final information about your order</h3>
+            <h4>Street : <span class = "result-of-order-span" id = "streetResult"></span></h4>
+            <h4>Number of flat : <span class = "result-of-order-span" id = "flatResult"></span></h4>
+            <h4>Post Code : <span class = "result-of-order-span" id = "postcodeResult"></span></h4>
+            <h4>City: <span class = "result-of-order-span" id = "cityResult"></span></h4>
 
+            <h3 class = "final-info-order">Final information about your order</h3>
+            <h4>Your pizza name : <span class = "result-of-order-span" id = "pizzaNameResult"></span></h4>
+            <h4>Size of your pizza : <span class = "result-of-order-span" id = "pizzaSizeResult"></span></h4>
+            <h4>Ingredients : <span class = "result-of-order-span" id = "ingredientsResult"></span></h4>
 
         </div>
+        
 
 
         <h3 class = "text-on-page-content"  id = "hide-welcome-text">Welcome on our <br>Italiano Politano Pizzeria</h3>       

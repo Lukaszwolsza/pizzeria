@@ -306,3 +306,24 @@ td{
     width:20%;
     padding-left:3%;
 }
+.order-info-box{
+    width: 85%;
+    text-align: center;
+    border-radius: 25px;
+    padding:1%;
+    margin:0 auto;
+    display: none;
+    background-color: white;
+
+}
+.order-info-box.visible{
+    display: block;
+    animation: fade-slide-in 0.3s ease-out forwards;
+}
+.final-info-order{
+    text-align: center;
+
+}
+.result-of-order-span{
+    text-decoration: underline;
+}
