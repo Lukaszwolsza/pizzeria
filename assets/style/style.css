@@ -324,6 +324,13 @@ td{
     text-align: center;
 
 }
-.result-of-order-span{
-    text-decoration: underline;
+.order-title-info{
+    font-variant-caps: small-caps;
+    display:inline-block;
+    font-size: 150%;
+}
+.result-of-span-order{
+    display:inline-block;
+    font-size: 130%;
+    margin-left: 2%;
 }

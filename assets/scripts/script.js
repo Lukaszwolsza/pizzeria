@@ -54,6 +54,7 @@ const addNewIngr = () => {
     input = document.createElement('input');
     input.setAttribute('type','text');
     input.setAttribute('id','inputedIngredients');
+    input.setAttribute('class', 'inputedIngr');
     input.setAttribute('placeholder','mushrooms');
     inputedIngredientsDynamic.insertAdjacentElement('beforeend', input);
 };
@@ -72,7 +73,7 @@ const showFinalInfoAboutOrder = () => {
     orderInfoBox.classList.toggle('visible');
     creatingPizzaDiv.classList.toggle('visible');
 
-    const allIngredients = document.querySelectorAll('.inputedIngr');
+    const allIngredients = document.querySelectorAll('.inputedIngr').value;
     const streetAddress = document.getElementById('streetInfo').value;
     const numberAddress = document.getElementById('flatNumberInfo').value;
     const postCode = document.getElementById('postCodeInfo').value;
@@ -80,19 +81,23 @@ const showFinalInfoAboutOrder = () => {
     const pizzaSize = document.getElementById('inputedSize').value;
     const pizzaName = document.getElementById('pizzaName').value;
 
-    
-   
-    for(let i = 0; i < allIngredients.length; i++){
-        console.log(allIngredients.value)
-    
-    }
-    pizzaNameResult.textContent = pizzaName;
-    // if(pizzaSize === 30 || pizzaSize === 40 || pizzaSize === 50){
+    // if(pizzaSize != 30 || pizzaSize === 40 || pizzaSize === 50){
     //     pizzaSizeResult.textContent = pizzaSize;
+    //     console.log(pizzaSizeResult);
     // } else {
-    //     alert('You inputed incorrect pizza size');
-
+    //     alert('You inputed incorrect pizza size ! ');
+    //     pizzaSizeResult.textContent = "Incorrect size !";
     // }
+    
+    for(let i = 0; i < inputedIngredientsDynamic.children.length; i++){
+        
+        arrayWithIngredients.push(inputedIngredientsDynamic.children[i].value, ", ");
+        
+    }
+
+    pizzaNameResult.textContent = pizzaName;
+    pizzaSizeResult.textContent = pizzaSize;
+    pizzaIngredients.textContent = arrayWithIngredients;
     streetResult.textContent = streetAddress;
     flatResult.textContent = numberAddress;
     postcodeResult.textContent = postCode;
